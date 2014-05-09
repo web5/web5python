@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-DB = 'sqlite:///temp/web5.db'
+DB = 'mysql://root:6138148@localhost/web5'
