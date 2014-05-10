@@ -3,3 +3,4 @@ Flask-Admin
 Flask-SQLAlchemy
 WTForms
 Flask-Script
+flask-security
