@@ -44,15 +44,13 @@ class User(db.Model, UserMixin):
     remember_token = db.Column(db.String(255))
     authentication_token = db.Column(db.String(255))
 
-    def __init__(self, name, email, password, active=True, username=None, roles=None, remember_token=None, authentication_token=None):
+    def __init__(self, name, email, password, active=True, username=None, roles=None ):
         self.name = name
         self.username = username
         self.email = email
         self.password = password
         self.active = active
         self.roles = roles
-        self.remember_token = remember_token
-        self.authentication_token = authentication_token
 
     def __repr__(self):
         return '<User %r>' % self.username
